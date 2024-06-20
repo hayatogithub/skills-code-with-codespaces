@@ -1,5 +1,12 @@
 
-,
+
+
+{
+  "name": "Codespace for Skills!",
+  "image": "mcr.microsoft.com/vscode/devcontainers/universal:latest",
+  "remoteUser": "codespace",
+  "overrideCommand": false
+    ,,
 // コンテナ作成時にインストールしたい拡張機能のIDを追加します。
 "customizations": {
     "vscode": {
@@ -13,10 +20,6 @@
         ]
     }
 }
+"postCreateCommand": "echo '# Writing code upon codespace creation!' >> codespace.md"
 
-{
-  "name": "Codespace for Skills!",
-  "image": "mcr.microsoft.com/vscode/devcontainers/universal:latest",
-  "remoteUser": "codespace",
-  "overrideCommand": false
 }
